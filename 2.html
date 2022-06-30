@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NAS</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+
+    <div  class="container" style="background-color: #ffffff; height: 10vh; margin-top: 1rem;">
+<div class="row" style="background-color: #ffffff; height: 20vh;">
+    <div class="col-lg-6 topbar" >
+<img src="IMG/left.png" style="width: 26rem;">
+    </div>
+    <div class="col-lg-6 topbar" >
+<img src="IMG/right.png" style="float: right; width: 26rem;">
+    </div>
+
+</div>
+</div>
+
+ <nav class="navbar">
+        <div class="n-left">
+            <ol class="nav-list">
+                <li class="nav-item"><a href="">HOME</a> </li>
+                <li class="nav-item"><a href="">DATA VISULATISATION</a></li>
+                <li class="nav-item"><a href="">DRC</a></li>
+                <li class="nav-item"><a href="">ABOUT NAS</a></li>
+                <li class="nav-item"><a href="">CONTACT US</a></li>
+            </ol>
+        </div>
+        <div class="n-right">
+            <button class="btn">Login</button>
+        </div>
+    </nav>
+<div class="search" style="height:10vh; background-color: #EFF3FF; ">
+<div class="container">
+    <p style=" font-size: 3rem; padding-top:2rem; text-align: center;">Search Any State or District  <button style="width: 40rem; height:4rem; background-color: white; border: none;"><span style="font-size: 2rem;color: #BBBBBB; ">Search Kanpur</span></button></p>
+
+</div>
+</div>
+<!-- ---home start-- -->
+<div class="header " style="height:60vh; background-color: #101222; ">
+  <div class="container row" style="height:60vh;">
+    <div class="col-lg-6">
+<p style="font-size: 46px; color:#fff; padding-top: 7rem ; padding-left: 5rem;">Report Card of <br> <span style="font-size: 78px; color:#FF4D5B">Rajsthan</span></p>
+<br>
+<p style="font-size: 74px;padding-left: 5rem; color: white;">791<span style="font-size:30px ;">Ranking  in NAS</span></p>
+  
+</div>
+    <div class="col-lg-6 img">
+      <img src="IMG/Group 1922.png" style=" height: 60vh; ">
+    </div>
+  </div>
+
+  <!-- ----home end-- -->
+</div>
+<div class="new nav" style="height:10vh; background-color:#E8E8E8; ">
+    <div class="flex-container">
+        <div style="width: 150px;">ABOUT RAJASHTHAN</div>
+        <div style="background-color:#ffffff; color:#FF4D5B">CLASS 3</div>
+        <div>CLASS 5</div>  
+        <div>CLASS 8</div>
+        <div>CLASS 10</div>
+        <div style="width: 150px;">LEARNING OUTCOMES</div>  
+    
+      </div>
+
+</div>
+<section style="background-color: #F5F5F8; margin: 0px;">
+    <div class="container">
+    <div class="container box1" >
+        <p style="font-size: 46px; color:white; padding-left: 2rem; padding-top:4rem">Total Participation of Class 3</p>
+        <div class="row" >
+            <div class="col-lg-4">
+                <i class="fa fa-institution" style="font-size: 72px; margin-top: 30px; margin-left: 20px; color: white;">59 <span style="font-size: 20px;">School</span></i>    </div>
+            <div class="col-lg-4">
+                <i class="fa fa-users" style="font-size: 72px; margin-top: 30px; margin-left: 20px; color: white;">183 <span style="font-size: 20px;">Teachers</span></i>    </div>
+          
+            <div class="col-lg-4">
+                <i class="fa fa-user" style="font-size: 72px; margin-top: 30px; margin-left: 20px; color: white;">738 <span style="font-size: 20px;">Students</span></i>   
+            </div>
+
+        </div>
+    </div>
+    <div class="container box2" >
+        <p style="font-size: 46px; color:black; padding-left: 2rem; padding-top:4rem">Average Performance of Students</p>
+        <canvas id="myChart" style="width:100%;max-width:600px; margin-left: 50px;"></canvas>
+    </div>
+    <div class="container box3" >
+        <p style="font-size: 46px; color:black; padding-left: 2rem; padding-top:4rem">Percentage of Students in Performance Levels</p>
+        <div class="row" >
+            <div class="col-lg-4">
+                <div id="myPlot" style="height: 45vh;"></div>
+<p style="font-size: 20px; text-align:center">Language</p>
+                </div>
+            
+            <div class="col-lg-4">
+                <div id="myPlot2" style="height: 45vh;"></div>
+                <p style="font-size: 20px; text-align:center">Mathematics</p>
+                </div>
+             
+          
+            <div class="col-lg-4">
+                <div id="myPlot3" style="height: 45vh;"></div>
+                <p style="font-size: 20px; text-align:center">EVS</p>
+            </div>
+
+        </div>
+    </div>
+<div class="container box4" >
+    <div class="row">
+        <div class="col-lg-7" style=" height: 75vh; background-color: white">
+            <p style="font-size: 36px; color:black; padding-left: 2rem; padding-top:4rem">Performance by Gender</p>
+            <p style="padding-left: 2rem;"><button style="margin: 10px; background-color: #0E0840; border: none; border-radius: 2px; color:#FF4D5B">Language</button><button  style="margin: 10px; background-color: #F5F5F8; border: none; border-radius: 2px;">Mathematics</button><button  style="margin: 10px; background-color: #F5F5F8; border: none; border-radius: 2px;">EVS</button></p>
+            <canvas id="myChart2" style="width:100%;max-width:600px; margin-left: 50px;"></canvas>
+            <p style="font-size: 20px; padding-left: 13rem;">DISTRICT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            STATE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NATIONAL</p>
+        </div>
+        <div class="col-lg-1" style=" height: 75vh; background-color: transparent"></div>
+        <div class="col-lg-4" style=" height: 75vh; background-color: white">
+            <p style="font-size: 36px; color:black; padding-left: 2rem; padding-top:4rem">Participation by Gender</p>
+            <div class="flex-container1">
+                <div><p><img src="IMG/female.png" style="padding-left:10px"> <span style="font-size:90px ;">45%</span> Girls</p></div>
+                <div><p><img src="IMG/male.png" style="padding-left:25px"> <span style="font-size:90px ;">55%</span> Boys</p></div>
+               
+              </div>
+        </div>
+    
+    </div>
+
+</div>
+
+<div class="container box4" >
+    <div class="row">
+        <div class="col-lg-7" style=" height: 75vh; background-color: white">
+            <p style="font-size: 36px; color:black; padding-left: 2rem; padding-top:4rem">Performance by Location</p>
+            <p style="padding-left: 2rem;"><button style="margin: 10px; background-color: #F5F5F8; border: none; border-radius: 2px; ">Language</button><button  style="margin: 10px; background-color:#0E0840; border: none; border-radius: 2px; color:#FF4D5B">Mathematics</button><button  style="margin: 10px; background-color: #F5F5F8; border: none; border-radius: 2px;">EVS</button></p>
+            <canvas id="myChart3" style="width:100%;max-width:600px; margin-left: 50px;"></canvas>
+            <p style="font-size: 20px; padding-left: 13rem;">DISTRICT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            STATE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NATIONAL</p>
+        </div>
+        <div class="col-lg-1" style=" height: 75vh; background-color: transparent"></div>
+        <div class="col-lg-4" style=" height: 75vh; background-color: white">
+            <p style="font-size: 36px; color:black; padding-left: 2rem; padding-top:4rem">Participation by Location</p>
+            <div class="flex-container1">
+                <div><p><img src="IMG/urban.png" style="padding-left:10px"> <span style="font-size:80px ;">70%</span> Urban</p></div>
+                <div><p><img src="IMG/rural.png" style="padding-left:20px"> <span style="font-size:80px ;">30%</span> Rural</p></div>
+        </div>
+    
+    </div>
+
+</div>
+<div class="container box4" >
+    <div class="row">
+        <div class="col-lg-7" style=" height: 75vh; background-color: white">
+            <p style="font-size: 36px; color:black; padding-left: 2rem; padding-top:4rem">Performance by Management</p>
+            <p style="padding-left: 2rem;"><button style="margin: 10px; background-color: #F5F5F8; border: none; border-radius: 2px; ">Language</button><button  style="margin: 10px; background-color:#0E0840; border: none; border-radius: 2px; color:#FF4D5B">Mathematics</button><button  style="margin: 10px; background-color: #F5F5F8; border: none; border-radius: 2px;">EVS</button></p>
+            <canvas id="myChart4" style="width:100%;max-width:600px; margin-left: 50px;"></canvas>
+            <p style="font-size: 20px; padding-left: 13rem;">DISTRICT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            STATE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NATIONAL</p>
+        </div>
+        <div class="col-lg-1" style=" height: 75vh; background-color: transparent"></div>
+        <div class="col-lg-4" style=" height: 75vh; background-color: white">
+            <p style="font-size: 36px; color:black; padding-left: 2rem; padding-top:4rem">Participation by Management</p>
+            <div id="myPlot4" style="height: 55vh;"></div>
+        </div>
+    
+    </div>
+
+</div>
+<div class="container box4" >
+    <div class="row">
+        <div class="col-lg-7" style=" height: 75vh; background-color: white">
+            <p style="font-size: 36px; color:black; padding-left: 2rem; padding-top:4rem">Performance by Social Group</p>
+            <p style="padding-left: 2rem;"><button style="margin: 10px; background-color: #F5F5F8; border: none; border-radius: 2px; ">Language</button><button  style="margin: 10px; background-color:#0E0840; border: none; border-radius: 2px; color:#FF4D5B">Mathematics</button><button  style="margin: 10px; background-color: #F5F5F8; border: none; border-radius: 2px;">EVS</button></p>
+            <canvas id="myChart5" style="width:100%;max-width:600px; margin-left: 50px;"></canvas>
+            <p style="font-size: 20px; padding-left: 13rem;">DISTRICT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            STATE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NATIONAL</p></div>
+        <div class="col-lg-1" style=" height: 70vh; background-color: transparent"></div>
+        <div class="col-lg-4" style=" height: 70vh; background-color: white">
+            <p style="font-size: 36px; color:black; padding-left: 2rem; padding-top:4rem">Participation by Social Groups</p>
+            <div id="myPlot5" style="height: 55vh;"></div>
+        
+        </div>
+    
+    </div>
+
+</div>
+
+
+
+    </div>
+</section>
+<section class="table">
+  <h1>Performance of the District in Learning Outcomes (LOs)</h1>
+  <div class="t-container">
+    <table>
+      <thead>
+        <tr>
+          <th class="wid">LO Code</th>
+          <th>Learning Outcomes</th>
+          <th>District <br> Average <br> Performance</th>
+          <th>State <br> Average <br>Performance</th>
+          <th class="r-table">National <br>Average <br>Performance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td colspan="5" class="division">LANGUAGE</td></tr>
+        <tr>
+          <td>L304</td>
+          <td>Reads small texts with comprehension i.e., identifies main ideas, details, sequence and draws conclusions</td>
+          <td>82</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>L312</td>
+          <td>Reads printed scripts on the classroom walls: poems, posters, charts etc</td>
+          <td>83</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr><td colspan="5" class="division">MATHEMATICS</td></tr>
+        <tr>
+          <td>M301</td>
+          <td>Reads and writes numbers up to 999 using place value</td>
+          <td>82</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>M302</td>
+          <td>Compares numbers up to 999 based on their place values</td>
+          <td>82</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>M303</td>
+          <td>Solves simple daily life problems using addition and subtraction of three digit numbers with and without regrouping</td>
+          <td>82</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>M304</td>
+          <td>Constructs and uses the multiplication facts (up till 10) in daily life situations</td>
+          <td>82</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr><td colspan="5" class="division">EVS</td></tr>
+        <tr class="r-table">
+          <td>M301</td>
+          <td>Identifies simple features (e.g. movement, at places found/ kept, eating habits, sounds) of animals and birds in the immediate surroundings.</td>
+          <td>82</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="r-table">
+          <td>M302</td>
+          <td>Identifies relationships with and among family members.</td>
+          <td>82</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="r-table">
+          <td>M303</td>
+          <td>Identifies objects, signs (vessels, stoves, transport, means of communication, <br>transport, signboards), places (types of houses/ shelters, bus stand, petrol pump) activities <br>(works people do, cooking processes) at home/school/neighbourhood</td>
+          <td>82</td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+        
+      </tbody>
+    </table>
+  </div>
+</section>
+<section id="logo-1">
+
+  <div class="logo-1">
+      <img src="/IMG/Group 1833.png" alt="" srcset="">
+  </div>
+</section>
+<section id="logo-2">
+  <div class="logo2">
+      <img src="/IMG/Group 1822.png" alt="" srcset="">
+  </div>
+</section>
+<footer>
+  <div>THIS SITE IS DESIGNED, DEVELOPED, MAINTAINED AND HOSTED BY NATIONAL INFORMATICS CENTRE (NIC), MINISTRY OF
+      ELECTRONICS & INFORMATION TECHNOLOGY, GOVERNMENT OF INDIA.</div>
+</footer>
+<script>
+    var xValues = ["Language", "Mathematics", "Science", "EVS"];
+    var yValues = [74, 59, 44, 34, 25];
+    var barColors = ["red", "green","blue","orange","brown"];
+    
+    new Chart("myChart", {
+      type: "bar",
+      data: {
+        labels: xValues,
+        datasets: [{
+          backgroundColor: barColors,
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        title: {
+          display: true,
+          text: ""
+        }
+      }
+    });
+    </script>
+    <script>
+        var xArray = ["Below Basic", "Basic", "Proficient", "Advanced"];
+        var yArray = [58, 22, 2, 18];
+        
+        var layout = {title:""};
+        
+        var data = [{labels:xArray, values:yArray, hole:.4, type:"pie"}];
+        
+        Plotly.newPlot("myPlot", data, layout);
+        </script>
+         <script>
+           var xArray = ["Below Basic", "Basic", "Proficient", "Advanced"];
+        var yArray = [58, 22, 2, 18];
+            
+            var layout = {title:""};
+            
+            var data = [{labels:xArray, values:yArray, hole:.4, type:"pie"}];
+            
+            Plotly.newPlot("myPlot2", data, layout);
+            </script>
+             <script>
+             var xArray = ["Below Basic", "Basic", "Proficient", "Advanced"];
+        var yArray = [58, 22, 2, 18];
+                
+                var layout = {title:""};
+                
+                var data = [{labels:xArray, values:yArray, hole:.4, type:"pie"}];
+                
+                Plotly.newPlot("myPlot3", data, layout);
+                </script>
+                  <script>
+                    var xArray = ["Private", "Central Govt.", "Govt.", "Govt. Aided"];
+                    var yArray = [58, 18, 2, 22];
+                    
+                    var layout = {title:""};
+                    
+                    var data = [{labels:xArray, values:yArray, hole:.4, type:"pie"}];
+                    
+                    Plotly.newPlot("myPlot4", data, layout);
+                    </script>
+                      <script>
+                        var xArray = ["General", "OBC", "ST", "SC"];
+                        var yArray = [50, 50, 50,50];
+                        
+                        var layout = {title:""};
+                        
+                        var data = [{labels:xArray, values:yArray, hole:.4, type:"pie"}];
+                        
+                        Plotly.newPlot("myPlot5", data, layout);
+                        </script>
+
+
+
+
+
+
+                <script>
+                    var xValues = ["", "", "", "","",""];
+                    var yValues = [74, 59, 74, 54, 75,54];
+                    var barColors = ["red", "green","blue","orange","brown"];
+                    
+                    new Chart("myChart2", {
+                      type: "bar",
+                      data: {
+                        labels: xValues,
+                        datasets: [{
+                          backgroundColor: barColors,
+                          data: yValues
+                        }]
+                      },
+                      options: {
+                        legend: {display: false},
+                        title: {
+                          display: true,
+                          text: ""
+                        }
+                      }
+                    });
+                    </script>
+                           <script>
+                            var xArray = ["", "", "", ""];
+                            var yArray = [58, 18, 2, 22];
+                            
+                            var layout = {title:""};
+                            
+                            var data = [{labels:xArray, values:yArray, hole:.4, type:"pie"}];
+                            
+                            Plotly.newPlot("myPlot3", data, layout);
+                            </script>
+                            <script>
+                                var xValues = ["", "", "", "","",""];
+                                var yValues = [74, 59, 74, 54, 75,54];
+                                var barColors = ["red", "green","blue","orange","brown"];
+                                
+                                new Chart("myChart3", {
+                                  type: "bar",
+                                  data: {
+                                    labels: xValues,
+                                    datasets: [{
+                                      backgroundColor: barColors,
+                                      data: yValues
+                                    }]
+                                  },
+                                  options: {
+                                    legend: {display: false},
+                                    title: {
+                                      display: true,
+                                      text: ""
+                                    }
+                                  }
+                                });
+                                </script>
+                                 <script>
+                                    var xValues = ["", "", "", "","","","","","","","",""];
+                                    var yValues = [74, 59, 74, 54, 75,54,42,85,65,78,29,36];
+                                    var barColors = ["red", "green","blue","orange","brown","red", "green","blue","orange","brown","green","blue"];
+                                    
+                                    new Chart("myChart4", {
+                                      type: "bar",
+                                      data: {
+                                        labels: xValues,
+                                        datasets: [{
+                                          backgroundColor: barColors,
+                                          data: yValues
+                                        }]
+                                      },
+                                      options: {
+                                        legend: {display: false},
+                                        title: {
+                                          display: true,
+                                          text: ""
+                                        }
+                                      }
+                                    });
+                                    </script>
+                                     <script>
+                                        var xValues = ["", "", "", "","","","","","","","",""];
+                                        var yValues = [74, 59, 74, 54, 75,54,42,85,65,78,29,36];
+                                        var barColors = ["red", "green","blue","orange","brown","red", "green","blue","orange","brown","green","blue"];
+                                        
+                                        new Chart("myChart5", {
+                                          type: "bar",
+                                          data: {
+                                            labels: xValues,
+                                            datasets: [{
+                                              backgroundColor: barColors,
+                                              data: yValues
+                                            }]
+                                          },
+                                          options: {
+                                            legend: {display: false},
+                                            title: {
+                                              display: true,
+                                              text: ""
+                                            }
+                                          }
+                                        });
+                                        </script>
+</body>
+</html>

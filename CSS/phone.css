@@ -1,0 +1,175 @@
+body{
+    width:758px;
+    overflow-x: hidden;
+}
+
+header{
+    border:2px solid black;
+}
+.left img {
+
+    
+    margin-left: 50px;
+    width: 200px;
+    height: 49px;
+    margin-top: 0px;
+
+}
+.right img {
+    width: 124px;
+    height: 32px;
+    margin: 16px 90px;
+}
+
+.navbar{
+    width: 758px;
+}
+
+.nav-list a {
+    font: normal normal 600 10px/20px Poppins;
+    padding:0px 20px;
+}
+.btn {
+    width: 60px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: #FFFFFF;
+    color: #050038;
+    font-size: 10px;
+    
+}
+
+
+#home{
+    width: 758px;
+    display:flex;
+    /* justify-content:flex-start; */
+    align-items: center;
+}
+.h-container{
+    /* border:2px solid white; */
+    width:100%;
+    /* float: left !important; */
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.h-container h1 {
+    font: normal normal normal 23px/19px 'Playfair Display';
+
+}
+.h-container input {
+    font: normal normal normal 16px/29px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 0px;
+    color: #BBBBBB;
+    margin-top: 20px;
+    opacity: 1;
+    width: 242px;
+    height: 45px;
+    text-align: center;
+    border-radius: 60px;
+}
+.h-container i {
+    color: #ffffff;
+
+    position: absolute;
+    top: 60px;
+    left: 175px;
+}
+
+#right{
+    display: none;
+    /* border: 2px solid red;; */
+}
+.h-container{
+    width:758px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#about .h-primary {
+   width:fit-content;
+   font: normal normal bold 26px/43px Playfair Display;
+}
+#survey{
+    /* border:2px solid black; */
+    height: 800px;
+    width:758px;
+}
+.s-container{
+    margin-top: 0px;
+    /* border:2px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.s-left{
+    width: 100%;
+    height: 80%;
+    /* border:2px solid black; */
+}
+.s-left h4 {
+    font: normal normal normal 20px/19px Poppins;
+}
+
+.s-left h3 {
+    font: normal normal normal 28px/30px Playfair Display;
+}
+
+.s-left p {
+    font: normal normal 300 14px/24px Poppins;
+}
+.s-right{
+    width:100%;
+    margin-top: 40px;
+    /* border:2px solid blue; */
+}
+.s-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+}
+.s-card h6 {
+    font: normal normal normal 14px/14px Manrope;
+   
+}
+.num {
+    font: normal normal bold 30px/14px Poppins;
+   
+}
+.s-card div{
+    margin-left: 0px;
+}
+.a-container{
+    flex-direction: column;
+}
+.a-card img {
+    width: 181px;
+    height: 181px;
+}
+.a-card p {
+    margin-top: 10px;
+    font: normal normal bold 16px/18px Playfair Display;
+    
+}
+.h-primary {
+    text-align: center;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 40px;
+    font: normal normal bold 36px/23px Playfair Display;
+   
+}
+.logo-1 img{
+    width: 500px;
+    height: 50px;
+}
+.logo2 img{
+    width: 500px;
+    height: 60px;
+}
