@@ -1,0 +1,89 @@
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: center;
+}
+.left img {
+
+    /* margin-top: ; */
+    /* margin-left: 10px; */
+    width: 180px;
+    height: 40px;
+    margin:0px;
+    padding:0px;
+
+}
+.right img {
+    width: 180px;
+    height: 32px;
+    margin:0px;
+    padding:0px;
+    /* margin: 16px 90px; */
+}
+.h-container h1 {
+    font: normal normal normal 12px/19px 'Playfair Display';
+
+}
+.nav-list a {
+    font: normal normal 600 8px/40px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    text-decoration: none;
+    list-style: none;
+    padding:0px 3px;
+}
+    .btn {
+        display: none;
+    }
+    .h-container input {
+       font-size: 10px;
+        color: #BBBBBB;
+        /* margin-top: 20px; */
+        opacity: 1;
+        width: 180px;
+        height: 20px;
+        text-align: center;
+        border-radius: 60px;
+    }
+    #home{
+        height: 400px;
+    }
+    #survey{
+        height:500px;
+    }
+    .h-container h1 {
+        font: normal normal normal 10px 'Playfair Display';
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        font-family: 'Playfair Display', serif;
+    
+    
+    }
+    .h-container i {
+       display: none;
+    }
+    .s-left h4 {
+        font: normal normal normal 8px/10px Poppins;
+        letter-spacing: 0px;
+        color: #FF4D5B;
+        opacity: 1;
+    }
+    
+    .s-left h3 {
+        font: normal normal normal 10px/10px Playfair Display;
+        letter-spacing: 0px;
+        color: #0E0840;
+        opacity: 1;
+    }
+    
+    .s-left p {
+        font: normal normal 300 8px/10px Poppins;
+        letter-spacing: 0px;
+        color: #2A2A2A;
+        opacity: 1;
+    }
+    

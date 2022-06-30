@@ -4,39 +4,38 @@
     margin: 0px;
 }
 
-body {
-    width: 1920px;
-}
-
 /* ----HEADER---- */
 
 header {
     display: flex;
     background-color: #ffffff;
+    /* width: 1920px; */
 
 }
 
 .left {
     width: 50%;
+    /* border:2px solid red */
 }
 
 .left img {
 
-    margin-top: ;
+    /* margin-top: ; */
     margin-left: 110px;
-    width: 441px;
+    width: 380px;
     height: 49px;
     margin-top: 10px;
 
 }
 
 .right {
+    /* border:2px solid black; */
     width: 50%;
     text-align: right;
 }
 
 .right img {
-    width: 324px;
+    width: 300px;
     height: 62px;
     margin: 26px 50px;
 }
@@ -45,6 +44,7 @@ header {
 
 .navbar {
     height: 70px;
+    /* width: 1920px; */
     background-color: #0E0840;
     opacity: 1;
     display: flex;
@@ -105,8 +105,8 @@ header {
 
 #home {
     position: relative;
-    top: -20px;
-    width: 1920px;
+    /* width: 1920px; */
+    top:-20px;
     height: 617px;
     display: flex;
     align-items: center;
@@ -129,7 +129,7 @@ header {
     border-radius: 50%;
     background-color: #FF4D5B;
     position: absolute;
-    top: 250px;
+    top: 310px;
     left: 10px;
     cursor: pointer;
 }
@@ -170,6 +170,7 @@ header {
 
 #service {
     height: 500px;
+    /* width: 1920px; */
 }
 
 #survey {
@@ -177,13 +178,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border:2px solid red;/ */
 }
 
 .s-container {
+    /* border:2px solid gold;/ */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 81%;
+    width: 98%;
 }
 
 .s-left {
@@ -198,7 +201,7 @@ header {
 }
 
 .s-left h3 {
-    font: normal normal normal 32px/43px Playfair Display;
+    font: normal normal normal 30px/43px Playfair Display;
     letter-spacing: 0px;
     color: #0E0840;
     opacity: 1;
@@ -221,7 +224,7 @@ header {
 .s-card {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 10rem;
+    grid-gap: 6rem;
 }
 
 .s-card h6 {
@@ -237,7 +240,7 @@ header {
 }
 
 .num {
-    font: normal normal bold 70px/24px Poppins;
+    font: normal normal bold 60px/24px Poppins;
     letter-spacing: 0px;
     color: #FF4D5B;
 }
@@ -246,6 +249,7 @@ header {
 
 #about {
     height: 894px;
+    /* width: 1920px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -268,22 +272,22 @@ header {
 
 .a-card p {
     margin-top: 20px;
-    font: normal normal bold 36px/48px Playfair Display;
+    font: normal normal bold 30px/28px Playfair Display;
     letter-spacing: 0px;
     color: #0E0840;
     opacity: 1;
 }
 
 .a-card img {
-    width: 481px;
-    height: 481px;
+    width: 350px;
+    height: 350px;
 }
 
 .h-primary {
-    width: 724px;
-    height: 75px;
-    margin-bottom: 40px;
-    font: normal normal bold 56px/43px Playfair Display;
+    /* width: 724px; */
+    /* height: 75px; */
+    margin-bottom: 100px;
+    font: normal normal bold 40px/43px Playfair Display;
     letter-spacing: 0px;
     color: #0E0840;
     opacity: 1;
@@ -292,6 +296,7 @@ header {
 /* -------LOGO AND FOOTER------- */
 
 #logo-1 {
+    /* width: 1920px; */
     height: 250px;
     display: flex;
     justify-content: center;
@@ -299,19 +304,24 @@ header {
 }
 
 .logo-1 img {
-    width: 1542px;
-    height: 118px;
+    width: 1200px;
+    height:100px;
 }
 
 #logo-2 {
+    
     height: 235px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0E0840;
 }
+#logo-2 img{
+    width:600px;
+}
 
 footer {
+    /* width: 1920px; */
     border-top: 1px solid #101222;
     padding: 10px 0px;
     background-color: #090050;

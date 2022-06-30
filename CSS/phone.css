@@ -1,19 +1,14 @@
-body{
-    width:758px;
-    overflow-x: hidden;
-}
+
 
 header{
-    border:2px solid black;
+    /* border:2px solid black; */
+    /* width: 758px; */
 }
 .left img {
-
-    
     margin-left: 50px;
     width: 200px;
     height: 49px;
     margin-top: 0px;
-
 }
 .right img {
     width: 124px;
@@ -22,12 +17,12 @@ header{
 }
 
 .navbar{
-    width: 758px;
+    /* width: 758px; */
 }
 
 .nav-list a {
     font: normal normal 600 10px/20px Poppins;
-    padding:0px 20px;
+    padding:0px 10px;
 }
 .btn {
     width: 60px;
@@ -42,7 +37,7 @@ header{
 
 
 #home{
-    width: 758px;
+    /* max-width: 758px; */
     display:flex;
     /* justify-content:flex-start; */
     align-items: center;
@@ -58,11 +53,11 @@ header{
 
 }
 .h-container h1 {
-    font: normal normal normal 23px/19px 'Playfair Display';
+    font: normal normal normal 20px/19px 'Playfair Display';
 
 }
 .h-container input {
-    font: normal normal normal 16px/29px;
+    font: normal normal normal 10px/29px;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0px;
     color: #BBBBBB;
@@ -92,6 +87,10 @@ header{
     align-items: center;
 
 }
+#about{
+    /* width: 758px; */
+}
+
 #about .h-primary {
    width:fit-content;
    font: normal normal bold 26px/43px Playfair Display;
@@ -99,7 +98,7 @@ header{
 #survey{
     /* border:2px solid black; */
     height: 800px;
-    width:758px;
+    /* width:758px; */
 }
 .s-container{
     margin-top: 0px;
@@ -110,19 +109,20 @@ header{
 }
 .s-left{
     width: 100%;
-    height: 80%;
+    height: 70%;
+    overflow: hidden;
     /* border:2px solid black; */
 }
 .s-left h4 {
-    font: normal normal normal 20px/19px Poppins;
+    font: normal normal normal 16px/19px Poppins;
 }
 
 .s-left h3 {
-    font: normal normal normal 28px/30px Playfair Display;
+    font: normal normal normal 20px/30px Playfair Display;
 }
 
 .s-left p {
-    font: normal normal 300 14px/24px Poppins;
+    font: normal normal 300 10px/24px Poppins;
 }
 .s-right{
     width:100%;
@@ -135,7 +135,7 @@ header{
     grid-gap: 5rem;
 }
 .s-card h6 {
-    font: normal normal normal 14px/14px Manrope;
+    font: normal normal normal 10px/14px Manrope;
    
 }
 .num {
@@ -165,11 +165,21 @@ header{
     font: normal normal bold 36px/23px Playfair Display;
    
 }
+ #logo-1 {
+    /* width: 758px; */
+}
+#logo-2 {
+     /* width: 758px */
+} 
+
 .logo-1 img{
-    width: 500px;
+    width: 350px;
+    height: 40px;
+}
+#logo-2 img{
+    width: 300px;
     height: 50px;
 }
-.logo2 img{
-    width: 500px;
-    height: 60px;
+footer p{
+    font-size:1rem;
 }
