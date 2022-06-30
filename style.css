@@ -39,6 +39,8 @@
 }
 .flex-container {
  flex-direction: column !important;
+     align-items: center !important;
+  justify-content: center !important;
 }
 .box1{
   margin-top: 40rem !important;
