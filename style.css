@@ -82,7 +82,7 @@
   height: 1350vh !important;
 }
 .body{
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 }
 
